@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb",
+  "globals": {
+    "jest": false,
+    "it": false,
+    "describe": false,
+    "expect": false,
+    "document": false
+  },
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "linebreak-style": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "no-return-assign": "off",
+    "react/forbid-prop-types": "off",
+    "import/no-extraneous-dependencies": "off",
+    "func-names": "off"
+  }
+}
