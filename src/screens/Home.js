@@ -119,15 +119,13 @@ export default class Home extends Component {
       <Animated.ScrollView 
         ref={ref => this._scrollView = ref}
         onScroll={Animated.event(
-          [
-            {
-              nativeEvent: {
-                contentOffset: { 
-                  y: this.state.scrollOffset 
-                }
-              },
-            }
-          ]
+          [{
+            nativeEvent: {
+              contentOffset: { 
+                y: this.state.scrollOffset 
+              }
+            },
+          }]
         )}>
         {this.state.users.map(user => (
           <User
